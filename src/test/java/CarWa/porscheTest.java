@@ -13,6 +13,9 @@ public void shouldCloneStringArray(){
         String[] copiedArray=array.clone();
         assertSame(array,array);
         assertNotSame(array,copiedArray);
+        for (String str: copiedArray){
+            System.out.println(str);
+        }
 
     }
 
